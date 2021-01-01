@@ -70,7 +70,7 @@ static const char *volumed[]  = { "/home/pyj/sh/volumeDowm.sh", NULL };
 static const char *volumeu[]  = { "/home/pyj/sh/volumeUp.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
-static const char *trayer[] = { "trayer" ,NULL };
+static const char *trayer[] = { "/home/pyj/sh/showstatus.sh" ,NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
