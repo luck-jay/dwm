@@ -70,6 +70,7 @@ static const char *volumed[]  = { "/home/pyj/sh/volumeDowm.sh", NULL };
 static const char *volumeu[]  = { "/home/pyj/sh/volumeUp.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *trayer[] = { "trayer" ,NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -110,6 +111,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volumeu} },
 	{ MODKEY,                       XK_F2,     spawn,          {.v = volumed} },
+	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = trayer} },
 };
 
 /* button definitions */
