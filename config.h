@@ -66,6 +66,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "run", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
+static const char *flameshot[]  = { "flameshot", NULL };
 static const char *volumed[]  = { "/home/pyj/sh/volumeDowm.sh", NULL };
 static const char *volumeu[]  = { "/home/pyj/sh/volumeUp.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
@@ -110,6 +111,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_c,      quit,           {0} },
 	{ MODKEY,                       XK_F3,     spawn,          {.v = volumeu} },
 	{ MODKEY,                       XK_F2,     spawn,          {.v = volumed} },
+	{ MODKEY,                       XK_F5,     spawn,          {.v = flameshot} },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = trayer} },
 };
 
